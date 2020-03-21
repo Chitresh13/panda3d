@@ -633,6 +633,24 @@ __nonzero__() const {
 }
 
 /**
+ * Returns the picklable state.
+ */
+template<class WType, int nbits>
+INLINE typename BitMask<WType, nbits>::WordType BitMask<WType, nbits>::
+__getstate__() const {
+  return _word;
+}
+
+/**
+ * Sets the picklable state.
+ */
+template<class WType, int nbits>
+INLINE void BitMask<WType, nbits>::
+__setstate__(WordType word) {
+  _word = word;
+}
+
+/**
  * Adds the bitmask to the indicated hash generator.
  */
 template<class WType, int nbits>

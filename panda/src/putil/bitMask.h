@@ -126,6 +126,8 @@ PUBLISHED:
   INLINE int get_key() const;
 
   INLINE bool __nonzero__() const;
+  INLINE WordType __getstate__() const;
+  INLINE void __setstate__(WordType word);
 
 public:
   INLINE void generate_hash(ChecksumHashGenerator &hashgen) const;

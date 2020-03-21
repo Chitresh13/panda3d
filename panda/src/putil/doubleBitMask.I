@@ -648,6 +648,15 @@ operator >>= (int shift) {
 }
 
 /**
+ * Returns true if the bitmask is not zero.
+ */
+template<class BMType>
+INLINE bool DoubleBitMask<BMType>::
+__nonzero__() const {
+  return !is_zero();
+}
+
+/**
  * Adds the doubleBitMask to the indicated hash generator.
  */
 template<class BMType>

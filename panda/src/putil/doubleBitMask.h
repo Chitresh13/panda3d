@@ -110,6 +110,8 @@ PUBLISHED:
   INLINE void operator <<= (int shift);
   INLINE void operator >>= (int shift);
 
+  INLINE bool __nonzero__() const;
+
 public:
   INLINE void generate_hash(ChecksumHashGenerator &hashgen) const;
 

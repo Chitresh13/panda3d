@@ -125,9 +125,15 @@ set(P3PUTIL_SOURCES
 set(P3PUTIL_IGATEEXT
   bamReader_ext.cxx
   bamReader_ext.h
+  bitArray_ext.cxx
+  bitArray_ext.h
+  bitArray_ext.I
   callbackObject_ext.h
   pythonCallbackObject.cxx
   pythonCallbackObject.h
+  sparseArray_ext.cxx
+  sparseArray_ext.h
+  sparseArray_ext.I
   typedWritable_ext.cxx
   typedWritable_ext.h
 )
